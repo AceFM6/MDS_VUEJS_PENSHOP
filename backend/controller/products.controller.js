@@ -28,7 +28,7 @@ exports.getById = (req, res, next) => {
           });
         } else {
             res.status(200).json({
-              data: data,
+              data: data[0],
             });
         }
       });
